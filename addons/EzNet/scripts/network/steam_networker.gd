@@ -6,7 +6,7 @@ var lobby_name : String
 var lobby_type : SteamMultiplayerPeer.LobbyType = SteamMultiplayerPeer.LobbyType.LOBBY_TYPE_PUBLIC
 var lobby_id : int
 
-var peer : SteamMultiplayerPeer = SteamMultiplayerPeer.new()
+var peer : SteamMultiplayerPeer
 
 signal on_lobby_created
 

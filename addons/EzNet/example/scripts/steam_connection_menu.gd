@@ -24,15 +24,16 @@ func _open_lobby_list():
 func _on_lobby_match_list(lobbies : Array):
 	
 	for lobby in lobbies:
-		
 		var lobby_name = Steam.getLobbyData(lobby, "name")
 		var memb_count = Steam.getNumLobbyMembers(lobby)
 		
 		var btn : Button = Button.new()
 		btn.set_text("%s | Player Count: %s" % [lobby_name, memb_count])
 		
-		network_manager.networker.lobby_id = lobby
-		
-		btn.pressed.connect(network_manager._connect_client)
+		btn.pressed.connect(Callable(_join_lobby).bind(lobby))
 		
 		$LobbyContainer/LobbiesList.add_child(btn)
+
+func _join_lobby(lobby : int):
+	network_manager.networker.lobby_id = lobby
+	network_manager._connect_client()

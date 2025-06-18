@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dcytbhnn2yopt" path="res://addons/EzNet/example/textures/red_normal.png" id="7_ijkee"]
 [ext_resource type="Texture2D" uid="uid://d3es3ep4mmfwc" path="res://addons/EzNet/example/textures/red_pressed.png" id="8_hk40f"]
 [ext_resource type="Texture2D" uid="uid://cwf3lihu1ntwk" path="res://addons/EzNet/example/textures/red_hovered.png" id="9_p7pfv"]
-[ext_resource type="Script" uid="uid://baxxkac0jykq4" path="res://addons/EzNet/example/scenes/levels/steam_connection_menu.gd" id="11_ijkee"]
-[ext_resource type="Script" uid="uid://cvybuu2pwdkle" path="res://addons/EzNet/example/scenes/levels/steam.gd" id="11_mo5f1"]
+[ext_resource type="Script" uid="uid://baxxkac0jykq4" path="res://addons/EzNet/example/scripts/steam_connection_menu.gd" id="11_ijkee"]
+[ext_resource type="Script" uid="uid://cvybuu2pwdkle" path="res://addons/EzNet/example/scripts/steam.gd" id="11_mo5f1"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sppne"]
 transparency = 1
@@ -124,22 +124,19 @@ offset_bottom = 40.0
 script = ExtResource("11_ijkee")
 
 [node name="Host" type="Button" parent="Menus/SteamConnectionMenu"]
-layout_mode = 0
 offset_top = 616.0
 offset_right = 1152.0
 offset_bottom = 648.0
 text = "Host"
 
 [node name="Refresh" type="Button" parent="Menus/SteamConnectionMenu"]
-layout_mode = 0
 offset_left = 256.0
 offset_top = 384.0
 offset_right = 896.0
-offset_bottom = 415.0
+offset_bottom = 416.0
 text = "Refresh"
 
 [node name="LobbyContainer" type="ScrollContainer" parent="Menus/SteamConnectionMenu"]
-layout_mode = 0
 offset_left = 256.0
 offset_top = 192.0
 offset_right = 896.0

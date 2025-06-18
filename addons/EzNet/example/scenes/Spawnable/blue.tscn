@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b7e47y2ql3w0p"]
 
 [ext_resource type="Script" uid="uid://df4nennhyxfux" path="res://addons/EzNet/example/scripts/example_character_network.gd" id="1_glp0v"]
-[ext_resource type="Script" uid="uid://bjgylmqw2xlv5" path="res://addons/EzNet/example/scenes/levels/example_point_and_click.gd" id="2_3ovbe"]
+[ext_resource type="Script" uid="uid://bjgylmqw2xlv5" path="res://addons/EzNet/example/scripts/example_point_and_click.gd" id="2_3ovbe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hk40f"]
 albedo_color = Color(0, 0, 1, 1)
