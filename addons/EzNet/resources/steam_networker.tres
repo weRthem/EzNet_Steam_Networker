@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c0b718pxcyxou"]
+
+[ext_resource type="Script" uid="uid://df4qrr6uap3nu" path="res://addons/EzNet/scripts/network/steam_networker.gd" id="1_5wsuw"]
+
+[resource]
+script = ExtResource("1_5wsuw")
+max_players = 4
